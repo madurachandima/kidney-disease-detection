@@ -3,7 +3,7 @@ from flask import Flask
 from flask.globals import request
 from flask.json import jsonify
 import joblib as joblib
-from sklearn.preprocessing import LabelEncoder
+
 
 app = Flask(__name__)
 
