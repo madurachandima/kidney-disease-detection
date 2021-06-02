@@ -1,0 +1,58 @@
+age - age
+bp - blood pressure
+sg - specific gravity
+al - albumin
+su - sugar
+rbc - red blood cells
+pc - pus cell
+pcc - pus cell clumps
+ba - bacteria
+bgr - blood glucose random
+bu - blood urea
+sc - serum creatinine
+sod - sodium
+pot - potassium
+hemo - hemoglobin
+pcv - packed cell volume
+wc - white blood cell count
+rc - red blood cell count
+htn - hypertension
+dm - diabetes mellitus
+cad - coronary artery disease
+appet - appetite
+pe - pedal edema
+ane - anemia
+class - class
+
+
+
+['age','al','sc','hemo','sg','pcv','bu','htn','rbc','pc','classification']
+
+
+//true
+{
+    "age": "62.0",
+    "specific_gravity": "1.020",
+    "albumin": "2.0",
+    "red_blood_cells": "1",
+    "pus_cell": "1",
+    "blood_urea": "53.0",
+    "serum_creatinine": "1.8",
+    "hemoglobin": "9.6",
+    "packed_cell_volume": "31",
+    "hypertension": "1"
+}
+//false
+{
+    "age": "62.0",
+    "specific_gravity": "1.020",
+    "albumin": "2.0",
+    "red_blood_cells": "1",
+    "pus_cell": "1",
+    "blood_urea": "53.0",
+    "serum_creatinine": "1.8",
+    "hemoglobin": "9.6",
+    "packed_cell_volume": "31",
+    "hypertension": "1"
+}
+
