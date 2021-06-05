@@ -133,32 +133,6 @@ const getResponse = (age, gravity, albumin, urean, serum,
 
 const callApi = async (jsonObj) => {
 
-    // var jsonObj = {
-    //     "age": "62",
-    //     "specific_gravity": "1.020",
-    //     "albumin": "2",
-    //     "red_blood_cells": "1",
-    //     "pus_cell": "1",
-    //     "blood_urea": "53.0",
-    //     "serum_creatinine": "1.8",
-    //     "hemoglobin": "9.6",
-    //     "packed_cell_volume": "31",
-    //     "hypertension": "1"
-    // }
-
-    // var jsonObj = {
-    //     "age": "55",
-    //     "specific_gravity": "1.020",
-    //     "albumin": "0",
-    //     "red_blood_cells": "1",
-    //     "pus_cell": "1",
-    //     "blood_urea": "49.0",
-    //     "serum_creatinine": "0.5",
-    //     "hemoglobin": "15.7",
-    //     "packed_cell_volume": "47",
-    //     "hypertension": "0"
-    // }
-
     try {
 
         const response = await fetch(API_KEY, {
