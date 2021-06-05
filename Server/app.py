@@ -1,14 +1,17 @@
 from os import replace
 from flask import Flask
 from flask.globals import request
+from flask_cors import CORS
 from flask.json import jsonify
 import joblib as joblib
 
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/getresult', methods=['POST'])
+
 def Response():
     request_data = request.get_json()
     response = ""
@@ -69,7 +72,7 @@ def Response():
             'message': message,
             'status': statusCode,
             'data': {
-                'ckd status': ckdStatus
+                'ckd_status': ckdStatus
             },
         }
     ]

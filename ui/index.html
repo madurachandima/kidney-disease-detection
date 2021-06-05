@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assests/./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/toaster/toastr.css">
+
+    <title>Kidney Disease
+        Detection</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+
+            <h3 class="text-center"
+                style="margin-top: 20px; font-weight: 300; font-size: 40px; text-align: center; align-items: center;">
+                Kidney Disease
+                Detection</h3>
+
+            <div class="col-lg-6 respones_area" style="margin-top: 30px;">
+                <div class="text-center">
+
+                    <img id="background_image" src="assests/images/background.png" class="rounded" alt="..."
+                        style="width: 280pt; height: auto; margin-top: 10%;">
+
+                    <h3 class="text-center" id="kidneyResponse"
+                        style="margin-top: 20px; font-weight: 300; font-size: 20px;"></h3>
+                </div>
+            </div>
+
+            <div class="col-lg-6  input_area" style="margin-top: 30px;">
+
+                <div class="form-row" style="margin:10px;">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAge">Age</label>
+                            <input type="text" class="form-control" id="inputAge" placeholder="Age">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputgravity">Specific gravity</label>
+                            <input type="text" class="form-control" id="inputgravity" placeholder="Specific gravity">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row" style="margin:10px;">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAlbumin">Albumin</label>
+                            <input type="text" class="form-control" id="inputAlbumin" placeholder="Albumin">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputurean">Blood urean</label>
+                            <input type="text" class="form-control" id="inputurean" placeholder="Blood urean">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row" style="margin:10px;">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputSerum">Serum creatinine</label>
+                            <input type="text" class="form-control" id="inputSerum" placeholder="Serum creatinine"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputHemoglobin">Hemoglobin</label>
+                            <input type="text" class="form-control" id="inputHemoglobin" placeholder="Hemoglobin">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row" style="margin:10px;">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputcell_volume">Packed cell volume</label>
+                            <input type="text" class="form-control" id="inputcell_volume"
+                                placeholder="Packed cell volume">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputcell">Pus cell</label>
+                            <select id="inputcell" class="form-control form-select">
+                                <option value="9" selected>Select Pus cell</option>
+                                <option value="1">Normal</option>
+                                <option value="0">Abnormal</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row" style="margin:10px;">
+                    <div class="row">
+
+                        <div class="form-group col-md-6">
+                            <label for="inputblood_cells">Red blood cells</label>
+                            <select id="inputblood_cells" class="form-control form-select">
+                                <option value="9" selected>Select Red blood cells</option>
+                                <option value="1">Normal</option>
+                                <option value="0">Abnormal</option>
+
+                            </select>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputHypertension">Hypertension</label>
+                            <select id="inputHypertension" class="form-control form-select">
+                                <option value="9" selected>Select Hypertension</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="form-row  text-center">
+                    <button type="button" class="btn btn-outline-success " style="width: 97% ; margin-top: 15px;"
+                        onclick="submit();">Load data</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="./assests/bootstrap/jquery.min.js"></script>
+<script src="./assests/bootstrap/popper.min.js"></script>
+<script src="./assests/bootstrap/bootstrap.min.js"></script>
+<script src="./assests/toaster/toastr.min.js"></script>
+<script src="./assests/js/index.js"></script>
+
+</html>
