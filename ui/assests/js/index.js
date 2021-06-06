@@ -2,13 +2,13 @@ const API_KEY = 'http://127.0.0.1:5000/getresult';
 
 const submit = () => {
 
-    let age = document.getElementById('inputAge').value;
-    let gravity = document.getElementById('inputgravity').value;
-    let albumin = document.getElementById('inputAlbumin').value;
-    let urean = document.getElementById('inputurean').value;
-    let serum = document.getElementById('inputSerum').value;
-    let hemoglobin = document.getElementById('inputHemoglobin').value;
-    let cell_volume = document.getElementById('inputcell_volume').value;
+    let age = document.getElementById('inputAge').value.trim();
+    let gravity = document.getElementById('inputgravity').value.trim();
+    let albumin = document.getElementById('inputAlbumin').value.trim();
+    let urean = document.getElementById('inputurean').value.trim();
+    let serum = document.getElementById('inputSerum').value.trim();
+    let hemoglobin = document.getElementById('inputHemoglobin').value.trim();
+    let cell_volume = document.getElementById('inputcell_volume').value.trim();
 
     let cell = document.getElementById('inputcell').value;
     let blood_cells = document.getElementById('inputblood_cells').value;
@@ -93,17 +93,17 @@ const validateInput = (age, gravity, albumin, urean, serum,
 
 
 
-    if (cell_volume == "9") {
+    if (cell_volume == "9" || !cell_volume.match(numberRegex)) {
         tosterMessage("error", "Select Pus cell.");
         return false
     }
 
-    if (blood_cells == "9") {
+    if (blood_cells == "9" || !blood_cells.match(numberRegex)) {
         tosterMessage("error", "Select blood cells.");
         return false
     }
 
-    if (hypertension == "9") {
+    if (hypertension == "9" || !hypertension.match(numberRegex)) {
         tosterMessage("error", "Select Hypertension.");
         return false
     }
@@ -190,6 +190,7 @@ const tosterMessage = (type, message) => {
 }
 
 const clearInputs = () => {
+    
     document.getElementById('inputAge').value = "";
     document.getElementById('inputgravity').value = "";
     document.getElementById('inputAlbumin').value = "";
