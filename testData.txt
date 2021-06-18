@@ -1,26 +1,28 @@
+//NOT CKD
+age = 35
+bp=80
+sg=1.020
+al=0
+rbc=1
+pc=1
+bu=31
+sc=1.2
+sod=135
+hemo=16.1
+pcv=23
+htn=0
 
-    var jsonObj = {
-        "age": "62",
-        "specific_gravity": "1.020",
-        "albumin": "2",
-        "red_blood_cells": "1",
-        "pus_cell": "1",
-        "blood_urea": "53.0",
-        "serum_creatinine": "1.8",
-        "hemoglobin": "9.6",
-        "packed_cell_volume": "31",
-        "hypertension": "1"
-    }
+//CKD
 
-    var jsonObj = {
-        "age": "55",
-        "specific_gravity": "1.020",
-        "albumin": "0",
-        "red_blood_cells": "1",
-        "pus_cell": "1",
-        "blood_urea": "49.0",
-        "serum_creatinine": "0.5",
-        "hemoglobin": "15.7",
-        "packed_cell_volume": "47",
-        "hypertension": "0"
-    }
+age = 69
+bp=70
+sg=1.010
+al=3.0
+rbc=1
+pc=0
+bu=87
+sc=2.7
+sod=130
+hemo=12.5
+pcv=16
+htn=1

@@ -13,23 +13,21 @@
         Detection</title>
 </head>
 
-<body>
+<body style="background-color:#010038; color: white;" >
     <div class="container">
-        <div class="row">
-
-            <h3 class="text-center"
-                style="margin-top: 20px; font-weight: 40; font-size: 40px; text-align: center; align-items: center;"><u>
-                Kidney Disease
-                Detection</u></h3>
-
+        <div class="row" style="margin-top: 20px;">
+            
             <div class="col-lg-6 respones_area" style="margin-top: 0; text-align: center;">
+                <h3 class="text-center text-uppercase"
+                style="margin-top: 35px; font-weight: 90px; font-size: 45px; text-align: center; align-items: center;">
+                Kidney Disease
+                Prediction</h3>
                 <div class="text-center">
-
-                    <img id="background_image" src="assests/images/background.png" class="rounded" alt="..."
+                    <img id="background_image" src="assests/images/background_2.png" class="rounded" alt="..."
                         style="width: auto; height: 300pt; margin-top: 10%;">
 
                     <h3 class="text-center" id="kidneyResponse"
-                        style="margin-bottom: 30px; font-weight: 400; font-size: 30px;"></h3>
+                        style="margin-bottom: 30px; font-weight: 400; font-size: 30p;"></h3>
                 </div>
             </div>
 
@@ -75,7 +73,21 @@
                             <input type="text" class="form-control" id="inputHemoglobin" placeholder="Hemoglobin">
                         </div>
                     </div>
+                </div>
 
+                
+                <div class="form-row" style="margin:10px;">
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="inputBlood_pressure">Blood pressure</label>
+                            <input type="text" class="form-control" id="inputBlood_pressure" placeholder="Blood pressure"
+                                required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputSodium">Sodium</label>
+                            <input type="text" class="form-control" id="inputSodium" placeholder="Sodium">
+                        </div>
+                    </div>
                 </div>
 
                 <div class="form-row" style="margin:10px;">
@@ -123,7 +135,7 @@
                 </div>
 
                 <div class="form-row  text-center">
-                    <button type="button" class="btn btn-outline-success " style="width: 97% ; margin-top: 15px;"
+                    <button type="button" class="btn btn-success " style="width: 97% ; margin-top: 15px;"
                         onclick="submit();">Check Result</button>
                 </div>
             </div>
